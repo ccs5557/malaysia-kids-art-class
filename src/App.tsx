@@ -69,22 +69,16 @@ const journalItems = [
     label: '年龄',
     title: '适合几岁孩子？',
     body: '建议 4-12 岁。年龄小的孩子从颜色和形状开始，大一点的孩子会加入构图和创作主题。',
-    image: '/assets/age-group-class.png',
-    alt: 'Children of different ages working at small tables in art class.',
   },
   {
     label: '小班',
     title: '一班多少人？',
     body: '小班教学，老师能看到每个孩子的进度。害羞或慢热的孩子也会被照顾到。',
-    image: '/assets/small-class-size.png',
-    alt: 'Small art class with five children around one table.',
   },
   {
     label: '体验',
     title: '可以先试课吗？',
     body: '可以。先预约一堂体验课，看看孩子喜不喜欢环境、老师和上课方式。',
-    image: '/assets/trial-class-ready.png',
-    alt: "Art studio prepared for a children's trial class.",
   },
 ];
 
