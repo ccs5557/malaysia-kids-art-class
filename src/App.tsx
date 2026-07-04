@@ -18,21 +18,21 @@ const featuredWorks = [
     title: '4-6 岁启蒙班',
     meta: '认识颜色、线条和形状',
     year: '适合第一次接触画画的孩子',
-    image: '/assets/malaysia-art-class.png',
+    image: '/assets/malaysia-art-class.webp',
     alt: 'Malaysian art teacher guiding young children painting in a warm classroom.',
   },
   {
     title: '7-12 岁创作班',
     meta: '水彩、丙烯、观察和主题创作',
     year: '让孩子学会表达自己的想法',
-    image: '/assets/kids-watercolor.png',
+    image: '/assets/kids-watercolor.webp',
     alt: 'Children painting with watercolor on a tidy art table.',
   },
   {
     title: '周末体验课',
     meta: '先来试一堂，再决定要不要报名',
     year: '家长可以先了解孩子喜不喜欢',
-    image: '/assets/kids-art-wall.png',
+    image: '/assets/kids-art-wall.webp',
     alt: 'Warm classroom wall displaying colorful children artwork.',
   },
 ];
@@ -41,25 +41,25 @@ const studioNotes = [
   {
     title: '先认识主题',
     body: '从动物、花草、节日或生活小故事开始，让孩子有话可画。',
-    image: '/assets/class-theme-intro.png',
+    image: '/assets/class-theme-intro.webp',
     alt: 'Teacher introducing a colorful drawing topic to children in art class.',
   },
   {
     title: '老师一步步示范',
     body: '先看老师怎么做，再让孩子自己试，不急着画得完美。',
-    image: '/assets/teacher-brush-demo.png',
+    image: '/assets/teacher-brush-demo.webp',
     alt: 'Teacher demonstrating brush strokes beside a child.',
   },
   {
     title: '孩子自己动手画',
     body: '保留孩子自己的想法，老师在旁边提醒技巧和鼓励表达。',
-    image: '/assets/child-independent-painting.png',
+    image: '/assets/child-independent-painting.webp',
     alt: 'Child focused on painting independently in class.',
   },
   {
     title: '带着作品回家',
     body: '每次完成一张作品，让孩子看见自己的进步和成就感。',
-    image: '/assets/child-proud-artwork.png',
+    image: '/assets/child-proud-artwork.webp',
     alt: 'Child proudly holding a finished colorful painting.',
   },
 ];
@@ -421,6 +421,8 @@ function FeaturedWorks() {
                 <img
                   src={work.image}
                   alt={work.alt}
+                  loading="lazy"
+                  decoding="async"
                   className="h-[320px] w-full object-cover transition-transform duration-700 group-hover:scale-[1.025] md:h-[440px]"
                 />
               </div>
@@ -468,8 +470,10 @@ function InnerWorld() {
       <div className="grid md:grid-cols-[1.04fr_1.1fr]">
         <div className="min-h-[520px] overflow-hidden border-y border-foreground/10 md:border-y-0 md:border-r">
           <img
-            src="/assets/teacher-guidance.png"
+            src="/assets/teacher-guidance.webp"
             alt="Art teacher gently helping a child paint at an easel."
+            loading="lazy"
+            decoding="async"
             className="h-full min-h-[520px] w-full object-cover"
           />
         </div>
@@ -489,7 +493,7 @@ function InnerWorld() {
               <TextLink href="#journal">看看家长常问的问题</TextLink>
             </div>
           </div>
-          <div className="pointer-events-none absolute right-0 top-20 z-0 hidden h-[360px] w-[210px] bg-[url('/assets/kids-watercolor.png')] bg-cover bg-center opacity-10 md:block" />
+          <div className="pointer-events-none absolute right-0 top-20 z-0 hidden h-[360px] w-[210px] bg-[url('/assets/kids-watercolor.webp')] bg-cover bg-center opacity-10 md:block" />
         </div>
       </div>
     </section>
@@ -523,6 +527,8 @@ function StudioNotes() {
                 <img
                   src={note.image}
                   alt={note.alt}
+                  loading="lazy"
+                  decoding="async"
                   className="h-52 w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                 />
               </div>
@@ -607,8 +613,10 @@ function Contact() {
   return (
     <footer id="contact" className="doodle-bg relative overflow-hidden px-6 py-16 md:px-10 md:py-20">
       <img
-        src="/assets/trial-class-table.png"
+        src="/assets/trial-class-table.webp"
         alt="Welcoming art studio table with children artwork and painting supplies."
+        loading="lazy"
+        decoding="async"
         className="absolute inset-y-0 right-0 hidden h-full w-[42%] object-cover opacity-80 md:block"
       />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,#fff_0%,#fff_52%,rgba(255,255,255,0.74)_75%,rgba(255,255,255,0.18)_100%)]" />

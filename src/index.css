@@ -53,7 +53,7 @@
     background-color: #fffdf7;
     background-image:
       linear-gradient(rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0.48)),
-      url('/assets/doodle-paper.png');
+      url('/assets/doodle-paper.webp');
     background-repeat: repeat;
     background-size: 620px auto;
     background-position: center top;
@@ -63,7 +63,7 @@
     background-color: #fffaf0;
     background-image:
       linear-gradient(rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.28)),
-      url('/assets/doodle-paper.png');
+      url('/assets/doodle-paper.webp');
     background-repeat: repeat;
     background-size: 430px auto;
     background-position: center;
