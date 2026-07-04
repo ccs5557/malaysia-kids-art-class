@@ -1,0 +1,102 @@
+@import './styles/fonts.css';
+@import './styles/theme.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color: #000000;
+    background: #ffffff;
+    font-family: Inter, Arial, sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body,
+  #root {
+    min-height: 100%;
+    margin: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 92px;
+  }
+
+  body {
+    overflow-x: hidden;
+    background: #ffffff;
+  }
+
+  section[id],
+  footer[id] {
+    scroll-margin-top: 92px;
+  }
+
+  button,
+  a {
+    font: inherit;
+  }
+}
+
+@layer components {
+  .doodle-bg {
+    background-color: #fffdf7;
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0.48)),
+      url('/assets/doodle-paper.png');
+    background-repeat: repeat;
+    background-size: 620px auto;
+    background-position: center top;
+  }
+
+  .doodle-paper {
+    background-color: #fffaf0;
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.28)),
+      url('/assets/doodle-paper.png');
+    background-repeat: repeat;
+    background-size: 430px auto;
+    background-position: center;
+  }
+
+  .scribble-note {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 22px 16px 26px 18px;
+    box-shadow:
+      0 18px 36px rgba(41, 30, 16, 0.08),
+      inset 0 -4px 0 rgba(0, 0, 0, 0.035);
+  }
+
+  .crayon-chip {
+    border-radius: 999px 820px 920px 780px;
+    box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.08);
+  }
+
+  .doodle-underline {
+    position: relative;
+  }
+
+  .doodle-underline::after {
+    position: absolute;
+    right: 0;
+    bottom: -0.28rem;
+    left: 0;
+    height: 0.42rem;
+    content: '';
+    background: linear-gradient(90deg, #ffd76a, #ff9f8f, #8fc7ff);
+    border-radius: 999px;
+    opacity: 0.55;
+    transform: rotate(-1.5deg);
+    z-index: -1;
+  }
+}
